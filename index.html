@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Global Disaster Management & Calamity Intensity Monitor</title>
+    <meta name="description" content="Official multi-agency hazard monitoring, regional intensity tracking, satellite telemetry, and proximity civil defense alerts from USGS, GDACS, and NASA." />
+    
+    <!-- Mobile App Store & PWA Metadata -->
+    <meta name="theme-color" content="#020617" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="DISASTER PULSE" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/icon-192.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.svg" />
+
+    <!-- Open Graph & Twitter Cards -->
+    <meta property="og:title" content="Global Disaster Management & Calamity Intensity Monitor" />
+    <meta property="og:description" content="Official multi-agency hazard monitoring, regional intensity tracking, satellite telemetry, and proximity civil defense alerts from USGS, GDACS, and NASA." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Leaflet Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register service worker for offline resilience
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.warn('Service worker registration note:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+

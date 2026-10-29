@@ -1,0 +1,7 @@
+{
+  "name": "Global Disaster Management & Calamity Intensity Monitor",
+  "description": "Official multi-agency hazard monitoring, regional intensity tracking, satellite telemetry, and proximity civil defense alerts from USGS, GDACS, and NASA.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="maskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="shieldGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full background for adaptive maskable icon -->
+  <rect width="512" height="512" fill="url(#maskGrad)"/>
+
+  <!-- Safe Area (410px centered) -->
+  <g transform="translate(51, 51)">
+    <circle cx="205" cy="205" r="160" fill="none" stroke="#1e293b" stroke-width="4"/>
+    <circle cx="205" cy="205" r="115" fill="none" stroke="#334155" stroke-width="3" stroke-dasharray="8 8"/>
+
+    <!-- Central Emblem -->
+    <g transform="translate(105, 105)">
+      <path d="M100 12 L172 40 C172 116 132 166 100 186 C68 166 28 116 28 40 Z" 
+            fill="url(#shieldGradM)"/>
+      <path d="M100 24 L160 48 C160 112 128 152 100 170 C72 152 40 112 40 48 Z" 
+            fill="#0f172a"/>
+
+      <circle cx="100" cy="96" r="44" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+      <ellipse cx="100" cy="96" rx="22" ry="44" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+      <line x1="56" y1="96" x2="144" y2="96" stroke="#38bdf8" stroke-width="2.5"/>
+      <circle cx="100" cy="96" r="11" fill="#f43f5e"/>
+      <circle cx="100" cy="96" r="5" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

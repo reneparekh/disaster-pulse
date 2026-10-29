@@ -1,0 +1,33 @@
+{
+  "name": "Global Disaster Management & Calamity Monitor",
+  "short_name": "DISASTER PULSE",
+  "description": "Multi-agency hazard monitoring, regional intensity tracking, satellite telemetry, and proximity civil defense alerts from USGS, GDACS, and NASA.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "categories": ["weather", "navigation", "utilities", "public-safety"],
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

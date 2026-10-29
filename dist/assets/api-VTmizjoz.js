@@ -1,0 +1,1 @@
+function e(e){return e.startsWith(`/`)||(e=`/${e}`),`${e}`}export{e as apiUrl};
