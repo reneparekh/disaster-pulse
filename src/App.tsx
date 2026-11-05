@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { CalamityEvent, CalamityType } from './types/disaster';
 import { INITIAL_DISASTER_EVENTS, CALAMITY_METADATA_LIST } from './data/disastersData';
 import { fetchAllLiveDisasters, LiveFeedStats } from './services/liveFeedService';
@@ -1681,6 +1682,9 @@ export default function App() {
         onClose={() => setIsReportModalOpen(false)}
         selectedEventName={reportModalEventName}
       />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
